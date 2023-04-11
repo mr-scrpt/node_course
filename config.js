@@ -1,11 +1,11 @@
-const config = (params) =>({
+const config = (params) => ({
   server: {
-    static: {
+    statics: {
       port: 8000,
     },
     web: {
       port: 8001,
-    }
+    },
   },
 
   database: {
@@ -19,8 +19,7 @@ const config = (params) =>({
   loader: {
     timeout: 5000,
     displayErrors: false,
-  }
+  },
+})
 
-});
-
-module.exports = config;
+module.exports = config
