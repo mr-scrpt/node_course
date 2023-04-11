@@ -20,7 +20,7 @@ const config = (params) => ({
     timeout: 5000,
     displayErrors: false,
   },
-  transport: 'ws',
+  transport: 'http',
 })
 
 module.exports = config

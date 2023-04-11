@@ -30,9 +30,9 @@ const routing = {}
   }
 
   if (transport === 'http') {
-    serverHttp(routing, statics.port)
+    serverHttp(routing, web.port)
   } else if (transport === 'ws') {
-    staticServer('./static', statics.port)
     serverWs(routing, web.port)
   }
+  staticServer('./static', statics.port)
 })()

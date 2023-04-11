@@ -12,6 +12,7 @@ const receiveArgs = async (req) => {
 module.exports = (routing, port) => {
   http
     .createServer(async (req, res) => {
+      console.log('on http')
       const { url, socket } = req
       const [name, method, id] = url.substring(1).split('/')
       const entity = routing[name]
@@ -29,5 +30,5 @@ module.exports = (routing, port) => {
     })
     .listen(port)
 
-  console.log(`API on port ${port}`)
+  console.log(`Http API server running on port ${port}`)
 }

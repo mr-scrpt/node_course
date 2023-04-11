@@ -28,5 +28,5 @@ module.exports = (routing, port) => {
     })
   })
 
-  console.log(`API on port ${port}`)
+  console.log(`Websoket API server running on port ${port}`)
 }
