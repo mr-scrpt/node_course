@@ -2,13 +2,15 @@
 
 const fsp = require('node:fs').promises
 const path = require('node:path')
-const server = require('./ws.js')
+const serverWs = require('./ws.js')
+const serverHttp = require('./http.js')
 const staticServer = require('./static.js')
 const load = require('./load.js')
 const db = require('./db.js')
 const hash = require('./hash.js')
 const logger = require('./logger.js')
 const { statics, web } = require('./config.js')().server
+const { transport } = require('./config.js')()
 
 const sandbox = {
   console: Object.freeze(logger),
@@ -27,6 +29,10 @@ const routing = {}
     routing[serviceName] = await load(filePath, sandbox)
   }
 
-  staticServer('./static', statics.port)
-  server(routing, web.port)
+  if (transport === 'http') {
+    serverHttp(routing, statics.port)
+  } else if (transport === 'ws') {
+    staticServer('./static', statics.port)
+    serverWs(routing, web.port)
+  }
 })()
