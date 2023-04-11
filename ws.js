@@ -29,5 +29,5 @@ module.exports = (routing, port) => {
     });
   });
 
-  console.log(`API on port ${config().server.port}`);
+  console.log(`API on port ${port}`);
 };

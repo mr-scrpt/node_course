@@ -28,5 +28,5 @@ module.exports = (routing, port) => {
     res.end(JSON.stringify(result.rows));
   }).listen(port);
 
-  console.log(`API on port ${config().server.port}`);
+  console.log(`API on port ${port}`);
 };

@@ -1,7 +1,13 @@
 const config = (params) =>({
   server: {
-    port: 4000,
+    static: {
+      port: 8000,
+    },
+    web: {
+      port: 8001,
+    }
   },
+
   database: {
     host: 'localhost',
     port: 5432,
@@ -9,6 +15,12 @@ const config = (params) =>({
     user: 'node_chat',
     password: 'pgpass',
   },
+
+  loader: {
+    timeout: 5000,
+    displayErrors: false,
+  }
+
 });
 
 module.exports = config;

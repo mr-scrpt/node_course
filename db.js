@@ -1,15 +1,15 @@
 'use strict';
 
 const pg = require('pg');
-const config = require('./config');
+const { host, port, database, name, user, password } = require('./config')().database;
 
 
 const pool = new pg.Pool({
-  host: config().database.host,
-  port: config().database.port,
-  database: config().database.name,
-  user: config().database.user,
-  password: config().database.password,
+  host,
+  port,
+  database,
+  user,
+  password,
 });
 
 module.exports = (table) => ({
