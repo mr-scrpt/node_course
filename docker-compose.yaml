@@ -1,0 +1,16 @@
+version: "3.1"
+
+services:
+  db:
+    image: postgres
+    container_name: pg_node_chat
+    restart: always
+    environment:
+      POSTGRES_USER: node_chat
+      POSTGRES_PASSWORD: pgpass
+      POSTGRES_DB: node_chat
+      POSTGRES_INITDB_ARGS: "-A md5"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db:/home/db
