@@ -4,3 +4,15 @@
 2023-04-12T10:06:49	::ffff:127.0.0.1 user.read(3)
 2023-04-12T10:19:44	::ffff:127.0.0.1 user.read(3)
 2023-04-12T10:20:24	::ffff:127.0.0.1 user.read(3)
+2023-04-12T10:28:27	Websoket API server running on port 8001
+2023-04-12T10:32:02	Websoket API server running on port 8001
+2023-04-12T10:32:06	::ffff:127.0.0.1 user.read(3)
+2023-04-12T10:32:13	::ffff:127.0.0.1 user.read()
+2023-04-12T10:32:22	::ffff:127.0.0.1 country.read()
+2023-04-12T10:32:22	{ db: [Function (anonymous)] }
+2023-04-12T10:33:28	{ db: [Function (anonymous)] }
+2023-04-12T10:33:28	{ db: [Function (anonymous)] }
+2023-04-12T13:18:13	{ db: [Function (anonymous)] }
+2023-04-12T13:18:34	{ db: [Function (anonymous)] }
+2023-04-12T13:19:30	{ db: [Function (anonymous)] }
+2023-04-12T13:20:20	{ db: [Function (anonymous)] }

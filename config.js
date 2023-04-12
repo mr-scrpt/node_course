@@ -3,7 +3,7 @@ const config = (params) => ({
     statics: {
       port: 8000,
     },
-    web: {
+    api: {
       port: 8001,
     },
   },
@@ -21,7 +21,8 @@ const config = (params) => ({
     displayErrors: false,
   },
   // transport: 'ws',
-  transport: 'http',
+  // transport: 'http',
+  transport: 'express',
 })
 
 module.exports = config
