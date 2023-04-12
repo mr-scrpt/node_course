@@ -12,9 +12,12 @@ const receiveArgs = async (req) => {
 module.exports = (routing, port) => {
   http
     .createServer(async (req, res) => {
-      console.log('on http')
+      res.setHeader('Access-Control-Allow-Origin', '*')
+      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
+      res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
       const { url, socket } = req
       const [name, method, id] = url.substring(1).split('/')
+      console.log(name, method, id)
       const entity = routing[name]
       if (!entity) return res.end('Not found')
       const handler = entity[method]
@@ -26,6 +29,7 @@ module.exports = (routing, port) => {
       if (signature.includes('{')) args.push(await receiveArgs(req))
       console.log(`${socket.remoteAddress} ${method} ${url}`)
       const result = await handler(...args)
+      console.log(JSON.stringify(result.rows))
       res.end(JSON.stringify(result.rows))
     })
     .listen(port)
