@@ -4,24 +4,17 @@ const fs = require('node:fs')
 const util = require('node:util')
 const path = require('node:path')
 
-// const COLORS = {
-//   info: '\x1b[1;37m',
-//   debug: '\x1b[1;33m',
-//   error: '\x1b[0;31m',
-//   system: '\x1b[1;34m',
-//   access: '\x1b[1;38m',
-// }
-
 const DATETIME_LENGTH = 19
 
 class Logger {
-  constructor({ pathToLogFolder, colors }) {
+  constructor({ pathToLogFolder, colors, util }) {
     this.path = pathToLogFolder
     const date = new Date().toISOString().substring(0, 10)
     const filePath = path.join(pathToLogFolder, `${date}.log`)
     this.stream = fs.createWriteStream(filePath, { flags: 'a' })
     this.regexp = new RegExp(path.dirname(this.path), 'g')
     this.colors = colors
+    this.logger = require(`./${util}.js`)
   }
 
   close() {
@@ -33,9 +26,9 @@ class Logger {
     const date = now.substring(0, DATETIME_LENGTH)
     const color = this.colors[type]
     const line = date + '\t' + s
-    console.log(color + line + '\x1b[0m')
+    this.logger.log(color + line + '\x1b[0m')
     const out = line.replace(/[\n\r]\s*/g, '; ') + '\n'
-    console.log('in write ', out)
+    this.logger.log('in write ', out)
     this.stream.write(out)
   }
 

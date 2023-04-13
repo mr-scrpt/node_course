@@ -23,6 +23,7 @@ const config = {
   },
   logger: {
     pathToLogFolder: './log',
+    util: 'pino',
     colors: {
       info: '\x1b[1;37m',
       debug: '\x1b[1;33m',

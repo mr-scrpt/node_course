@@ -6,7 +6,7 @@ const config = require('./config.js')
 const load = require('./load.js')(config.sandbox)
 const db = require('./db.js')(config.database)
 const hash = require('./hash.js')
-const logger = require('./logger.js')(config.logger)
+const logger = require('./logger/logger.js')(config.logger)
 
 const transport = require(`./transport/${config.api.transport}.js`)(logger)
 const staticServer = require('./static.js')(logger)
