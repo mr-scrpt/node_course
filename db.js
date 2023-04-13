@@ -1,23 +1,14 @@
 'use strict'
 
 const pg = require('pg')
-const { host, port, database, name, user, password } =
-  require('./config')().database
 
-const pool = new pg.Pool({
-  host,
-  port,
-  database,
-  user,
-  password,
-})
-
-module.exports = (table) => ({
-  query(sql, args) {
-    return pool.query(sql, args)
+const crud = (pool) => (table) => ({
+  async query(sql, args) {
+    const result = await pool.query(sql, args)
+    return result.rows
   },
 
-  read(id, fields = ['*']) {
+  async read(id, fields = ['*']) {
     const names = fields.join(', ')
     const sql = `SELECT ${names} FROM ${table}`
     if (!id) return pool.query(sql)
@@ -54,8 +45,10 @@ module.exports = (table) => ({
     return pool.query(sql, data)
   },
 
-  delete(id) {
-    const sql = `DELETE FROM ${table} WHERE id = $1`
+  async delete(id) {
+    const sql = 'DELETE FROM ${table} WHERE id = $1'
     return pool.query(sql, [id])
   },
 })
+
+module.exports = (options) => crud(new pg.Pool(options))

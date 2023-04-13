@@ -1,5 +1,5 @@
 ;({
-  read(id) {
+  async read(id) {
     return db('users').read(id, ['id', 'login'])
   },
 

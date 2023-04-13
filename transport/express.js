@@ -7,12 +7,14 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-module.exports = async (routing, port) => {
+module.exports = (console) => async (routing, port) => {
   for (const [serviceName, service] of Object.entries(routing)) {
     for (const [method, func] of Object.entries(service)) {
       const path = `/${serviceName}/${method}*`
       app.post(path, async (req, res) => {
-        console.log('req.path', req.path)
+        const { url, socket, params } = req
+        const [name, method] = url.substring(1).split('/')
+        const ip = socket.localAddress
         const requestPath = req.path.split('/')
         const index = requestPath.indexOf(method)
 
@@ -22,6 +24,9 @@ module.exports = async (routing, port) => {
           paramsRequest = result
         }
 
+        console.log(
+          `Express logger: ${ip} ${name}.${method}(${JSON.stringify(params)})`
+        )
         const result = await func(paramsRequest)
         res.send(JSON.stringify(result.rows))
       })

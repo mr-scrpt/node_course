@@ -1,14 +1,16 @@
 'use strict'
 
-const console = require('./logger.js')
+// const console = require('./logger.js')
 const { Server } = require('ws')
 
-module.exports = (routing, port) => {
+module.exports = (console) => (routing, port) => {
+  // const console = require('./logger.js')(options)
   const ws = new Server({ port })
 
   ws.on('connection', (connection, req) => {
     const ip = req.socket.remoteAddress
     connection.on('message', async (message) => {
+      console.log(`Websoket logger: ${ip} ${message}`)
       const obj = JSON.parse(message)
       const { name, method, args = [] } = obj
       const entity = routing[name]

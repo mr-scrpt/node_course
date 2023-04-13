@@ -1,0 +1,207 @@
+2023-04-13T10:11:29	Websoket API server running on port 8001
+2023-04-13T10:13:59	Http API server running on port 8001
+2023-04-13T10:14:13	user read 3
+2023-04-13T10:14:13	::ffff:127.0.0.1 read /user/read/3
+2023-04-13T10:14:13	[{"id":"3","login":"user"}]
+2023-04-13T10:14:13	user read 3
+2023-04-13T10:14:13	::ffff:127.0.0.1 read /user/read/3
+2023-04-13T10:14:13	[{"id":"3","login":"user"}]
+2023-04-13T10:20:02	Websoket API server running on port 8001
+2023-04-13T10:20:05	::ffff:127.0.0.1 user.read(3)
+2023-04-13T10:20:06	::ffff:127.0.0.1 user.read(3)
+2023-04-13T10:27:02	Http API server running on port 8001
+2023-04-13T10:27:10	http logger: ::ffff:127.0.0.1 user.read(undefined)
+2023-04-13T10:27:10	::ffff:127.0.0.1 read /user/read/3
+2023-04-13T10:27:10	[{"id":"3","login":"user"}]
+2023-04-13T10:27:10	http logger: ::ffff:127.0.0.1 user.read(undefined)
+2023-04-13T10:27:10	::ffff:127.0.0.1 read /user/read/3
+2023-04-13T10:27:10	[{"id":"3","login":"user"}]
+2023-04-13T10:30:09	Express API server running on port 8001
+2023-04-13T10:30:11	Express logger: ::ffff:127.0.0.1 user.read(undefined)
+2023-04-13T10:31:02	Express API server running on port 8001
+2023-04-13T10:31:04	Express logger: ::ffff:127.0.0.1 user.read([object Object])
+2023-04-13T10:31:54	Express API server running on port 8001
+2023-04-13T10:31:55	{ '0': '/3' }
+2023-04-13T10:33:13	Express API server running on port 8001
+2023-04-13T10:33:14	Express logger: ::ffff:127.0.0.1 user.read({"0":"/3"})
+2023-04-13T10:34:34	Express API server running on port 8001
+2023-04-13T10:34:41	Express logger: ::ffff:127.0.0.1 user.read(0,/3)
+2023-04-13T13:34:19	Express API server running on port 8001
+2023-04-13T13:34:42	Express logger: ::ffff:127.0.0.1 user.read({"0":"/3"})
+2023-04-13T13:39:03	Static on port 8000
+2023-04-13T13:39:03	Express API server running on port 8001
+2023-04-13T13:50:52	Static on port 8000
+2023-04-13T13:50:52	Express API server running on port 8001
+2023-04-13T13:59:45	Static on port 8000
+2023-04-13T13:59:45	Express API server running on port 8001
+2023-04-13T14:00:21	Http API server running on port 8001
+2023-04-13T14:00:21	Static on port 8000
+2023-04-13T14:00:23	http logger: ::1 api.user(undefined)
+2023-04-13T14:02:28	Http API server running on port 8001
+2023-04-13T14:02:28	Static on port 8000
+2023-04-13T14:02:31	http logger: ::1 api.user(undefined)
+2023-04-13T14:02:38	http logger: ::1 api.user(undefined)
+2023-04-13T14:05:13	Http API on port 8001
+2023-04-13T14:05:13	Static on port 8000
+2023-04-13T14:05:18	::1 read /api/user/read
+2023-04-13T14:06:32	Http API on port 8001
+2023-04-13T14:06:32	Static on port 8000
+2023-04-13T14:06:34	::1 read /api/user/read 1
+2023-04-13T14:07:09	Http API on port 8001
+2023-04-13T14:07:09	Static on port 8000
+2023-04-13T14:07:11	::1 read /api/user/read 1
+2023-04-13T14:08:11	Http API on port 8001
+2023-04-13T14:08:11	Static on port 8000
+2023-04-13T14:08:13	::1 read /api/user/read 1
+2023-04-13T14:08:49	Http API on port 8001
+2023-04-13T14:08:49	Static on port 8000
+2023-04-13T14:08:52	::1 read /api/user/read 1
+2023-04-13T14:10:24	Http API on port 8001
+2023-04-13T14:10:24	Static on port 8000
+2023-04-13T14:10:30	::1 read /api/user/read 1
+2023-04-13T14:11:32	Http API on port 8001
+2023-04-13T14:11:32	Static on port 8000
+2023-04-13T14:11:33	::1 read /api/user/read 
+2023-04-13T14:17:07	Http API on port 8001
+2023-04-13T14:17:07	Static on port 8000
+2023-04-13T14:18:35	::1 read /api/user/read 
+2023-04-13T14:19:17	Http API on port 8001
+2023-04-13T14:19:17	Static on port 8000
+2023-04-13T14:19:18	::1 read /api/user/read 
+2023-04-13T14:19:38	Http API on port 8001
+2023-04-13T14:19:38	Static on port 8000
+2023-04-13T14:19:39	::1 read /api/user/read 
+2023-04-13T14:20:08	Http API on port 8001
+2023-04-13T14:20:08	Static on port 8000
+2023-04-13T14:20:09	::1 read /api/user/read 
+2023-04-13T14:21:00	Http API on port 8001
+2023-04-13T14:21:00	Static on port 8000
+2023-04-13T14:21:01	::1 read /api/user/read 
+2023-04-13T14:21:55	Http API on port 8001
+2023-04-13T14:21:55	Static on port 8000
+2023-04-13T14:21:56	::1 read /api/user/read 
+2023-04-13T14:21:57	RES Promise { <pending> }
+2023-04-13T14:22:20	Http API on port 8001
+2023-04-13T14:22:20	Static on port 8000
+2023-04-13T14:22:23	::1 read /api/user/read 
+2023-04-13T14:23:44	Http API on port 8001
+2023-04-13T14:23:44	Static on port 8000
+2023-04-13T14:23:49	::1 read /api/user/read 
+2023-04-13T14:25:40	Http API on port 8001
+2023-04-13T14:25:40	Static on port 8000
+2023-04-13T14:27:01	Http API on port 8001
+2023-04-13T14:27:01	Static on port 8000
+2023-04-13T14:27:06	::1 read /api/country/read 
+2023-04-13T14:27:06	{ db: [Function (anonymous)] }
+2023-04-13T14:28:45	Websoket API server running on port 8001
+2023-04-13T14:28:45	Static on port 8000
+2023-04-13T14:28:50	::1 country.read()
+2023-04-13T14:28:50	{ db: [Function (anonymous)] }
+2023-04-13T14:31:08	Websoket API server running on port 8001
+2023-04-13T14:31:08	Static on port 8000
+2023-04-13T14:32:08	Websoket API server running on port 8001
+2023-04-13T14:32:08	Static on port 8000
+2023-04-13T14:32:10	::1 country.read()
+2023-04-13T14:32:10	{ db: [Function (anonymous)] }
+2023-04-13T14:33:04	Websoket API server running on port 8001
+2023-04-13T14:33:04	Static on port 8000
+2023-04-13T14:33:05	Websoket logger: ::1 {"name":"country","method":"read","args":[]}
+2023-04-13T14:33:05	::1 country.read()
+2023-04-13T14:33:05	{ db: [Function (anonymous)] }
+2023-04-13T14:33:37	Websoket logger: ::ffff:127.0.0.1 {"name":"country","method":"read","args":[]}; 
+2023-04-13T14:33:37	::ffff:127.0.0.1 country.read()
+2023-04-13T14:33:37	{ db: [Function (anonymous)] }
+2023-04-13T14:33:49	Websoket logger: ::ffff:127.0.0.1 {"name":"country","method":"read","args":[2]}; 
+2023-04-13T14:33:49	::ffff:127.0.0.1 country.read(2)
+2023-04-13T14:33:49	{ db: [Function (anonymous)] }
+2023-04-13T14:42:07	Websoket API server running on port 8001
+2023-04-13T14:42:07	Static on port 8000
+2023-04-13T14:42:25	Http API on port 8001
+2023-04-13T14:42:25	Static on port 8000
+2023-04-13T14:42:26	::1 read /api/country/read 
+2023-04-13T14:42:26	{ db: [Function (anonymous)] }
+2023-04-13T14:42:43	Http API on port 8001
+2023-04-13T14:42:43	Static on port 8000
+2023-04-13T14:42:44	::1 read /api/country/read 
+2023-04-13T14:44:02	Http API on port 8001
+2023-04-13T14:44:02	Static on port 8000
+2023-04-13T14:44:03	entity: [object Object]
+2023-04-13T14:44:03	::1 read /api/country/read 
+2023-04-13T14:44:03	{ db: [Function (anonymous)] }
+2023-04-13T14:44:22	Http API on port 8001
+2023-04-13T14:44:22	Static on port 8000
+2023-04-13T14:44:23	entity: [object Object]
+2023-04-13T14:44:23	::1 read /api/country/read 
+2023-04-13T14:44:53	Http API on port 8001
+2023-04-13T14:44:53	Static on port 8000
+2023-04-13T14:44:55	handler: read(id) {; console.log({ db });; return country.read(id);; }
+2023-04-13T14:44:55	::1 read /api/country/read 
+2023-04-13T14:45:55	Http API on port 8001
+2023-04-13T14:45:55	Static on port 8000
+2023-04-13T14:45:56	handler: async read(id) {; return db('users').read(id, ['id', 'login']); }
+2023-04-13T14:45:56	::1 read /api/user/read 
+2023-04-13T14:46:38	Http API on port 8001
+2023-04-13T14:46:38	Static on port 8000
+2023-04-13T14:47:41	Http API on port 8001
+2023-04-13T14:47:41	Static on port 8000
+2023-04-13T14:47:43	handler: async read(id) {; const result = await db('users').read(id, ['id', 'login']); return result.rows; }
+2023-04-13T14:47:43	::1 read /api/user/read 
+2023-04-13T14:49:00	Http API on port 8001
+2023-04-13T14:49:00	Static on port 8000
+2023-04-13T14:49:01	handler: async read(id) {; // const result = await db('users').read(id, ['id', 'login']); // return result.rows; console.log('read'); }
+2023-04-13T14:49:01	::1 read /api/user/read 
+2023-04-13T14:49:01	read
+2023-04-13T14:49:37	Http API on port 8001
+2023-04-13T14:49:37	Static on port 8000
+2023-04-13T14:49:38	handler: async read(id) {; // const result = await db('users').read(id, ['id', 'login']); // return result.rows; // console.log('read'); return Promise.resolve('read'); }
+2023-04-13T14:49:38	::1 read /api/user/read 
+2023-04-13T14:49:42	handler: async read(id) {; // const result = await db('users').read(id, ['id', 'login']); // return result.rows; // console.log('read'); return Promise.resolve('read'); }
+2023-04-13T14:49:42	::1 read /api/user/read 
+2023-04-13T14:50:53	Http API on port 8001
+2023-04-13T14:50:53	Static on port 8000
+2023-04-13T14:50:55	handler: async read(id) {; // const result = await db('users').read(id, ['id', 'login']); // return result.rows; const result = db('users').read(id, ['id', 'login']); // console.log('read'); return Promise.resolve('read'); }
+2023-04-13T14:50:55	::1 read /api/user/read 
+2023-04-13T14:52:37	Http API on port 8001
+2023-04-13T14:52:37	Static on port 8000
+2023-04-13T14:52:38	::1 read /api/user/read 
+2023-04-13T15:07:24	Http API on port 8001
+2023-04-13T15:07:24	Static on port 8000
+2023-04-13T15:14:13	Http API on port 8001
+2023-04-13T15:14:13	Static on port 8000
+2023-04-13T15:14:17	in reauest
+2023-04-13T15:14:46	in reauest
+2023-04-13T15:15:12	Http API on port 8001
+2023-04-13T15:15:12	Static on port 8000
+2023-04-13T15:15:15	in reauest
+2023-04-13T15:16:41	Http API on port 8001
+2023-04-13T15:16:41	Static on port 8000
+2023-04-13T15:16:43	in reauest
+2023-04-13T15:16:43	in reauest
+2023-04-13T15:16:43	::1 read /api/user/read 
+2023-04-13T15:17:38	in reauest
+2023-04-13T15:17:38	in reauest
+2023-04-13T15:17:38	::1 read /api/user/read 3
+2023-04-13T15:17:53	in reauest
+2023-04-13T15:17:53	::1 read /api/user/read 3
+2023-04-13T15:18:06	in reauest
+2023-04-13T15:18:06	::1 read /api/user/read 3
+2023-04-13T15:18:22	in reauest
+2023-04-13T15:18:22	in reauest
+2023-04-13T15:18:22	::1 read /api/user/read 3
+2023-04-13T15:18:36	Http API on port 8001
+2023-04-13T15:18:36	Static on port 8000
+2023-04-13T15:18:38	in reauest
+2023-04-13T15:18:38	in reauest
+2023-04-13T15:18:38	::1 read /api/user/read 3
+2023-04-13T15:19:35	Http API on port 8001
+2023-04-13T15:19:35	Static on port 8000
+2023-04-13T15:19:37	in reauest
+2023-04-13T15:19:37	in reauest
+2023-04-13T15:19:37	::1 read /api/user/read 3
+2023-04-13T15:20:15	Http API on port 8001
+2023-04-13T15:20:15	Static on port 8000
+2023-04-13T15:20:19	in reauest
+2023-04-13T15:20:19	in reauest
+2023-04-13T15:20:19	::1 read /api/user/read 3
+2023-04-13T15:20:25	in reauest
+2023-04-13T15:20:25	::1 read /api/user/read 3
