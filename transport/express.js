@@ -28,7 +28,7 @@ module.exports = (console) => async (routing, port) => {
           `Express logger: ${ip} ${name}.${method}(${JSON.stringify(params)})`
         )
         const result = await func(paramsRequest)
-        res.send(JSON.stringify(result.rows))
+        res.send(JSON.stringify(result))
       })
     }
   }

@@ -1,0 +1,36 @@
+2023-04-15T09:46:41	Http API on port 8001
+2023-04-15T09:46:41	Static on port 8000
+2023-04-15T09:49:18	in reauest
+2023-04-15T09:49:18	::1 read /api/user/read 3
+2023-04-15T09:50:05	Http API on port 8001
+2023-04-15T09:50:05	Static on port 8000
+2023-04-15T09:50:13	in reauest
+2023-04-15T09:50:13	::1 read /api/user/read 3
+2023-04-15T09:50:20	in reauest
+2023-04-15T09:50:20	in reauest
+2023-04-15T09:50:20	::1 read /api/user/read 3
+2023-04-15T09:50:22	in reauest
+2023-04-15T09:50:22	::1 read /api/user/read 3
+2023-04-15T09:50:33	in reauest
+2023-04-15T09:50:33	in reauest
+2023-04-15T09:50:33	::1 read /api/user/read 3
+2023-04-15T09:51:30	Http API on port 8001
+2023-04-15T09:51:30	Static on port 8000
+2023-04-15T09:51:33	in reauest
+2023-04-15T09:51:33	::1 read /api/user/read 3
+2023-04-15T09:51:33	result undefined
+2023-04-15T09:52:30	Http API on port 8001
+2023-04-15T09:52:30	Static on port 8000
+2023-04-15T09:52:33	in reauest
+2023-04-15T09:52:33	::1 read /api/user/read 3
+2023-04-15T09:52:33	result undefined
+2023-04-15T09:53:27	Http API on port 8001
+2023-04-15T09:53:27	Static on port 8000
+2023-04-15T09:53:31	in reauest
+2023-04-15T09:53:31	::1 read /api/user/read 3
+2023-04-15T09:53:31	result Result {; command: 'SELECT',; rowCount: 1,; oid: null,; rows: [ { id: '3', login: 'user' } ],; fields: [; Field {; name: 'id',; tableID: 16386,; columnID: 1,; dataTypeID: 20,; dataTypeSize: 8,; dataTypeModifier: -1,; format: 'text'; },; Field {; name: 'login',; tableID: 16386,; columnID: 2,; dataTypeID: 1043,; dataTypeSize: -1,; dataTypeModifier: -1,; format: 'text'; }; ],; _parsers: [ [Function: parseBigInteger], [Function: noParse] ],; _types: TypeOverrides {; _types: {; getTypeParser: [Function: getTypeParser],; setTypeParser: [Function: setTypeParser],; arrayParser: [Object],; builtins: [Object]; },; text: {},; binary: {}; },; RowCtor: null,; rowAsArray: false; }
+2023-04-15T09:54:08	Http API on port 8001
+2023-04-15T09:54:08	Static on port 8000
+2023-04-15T09:54:11	in reauest
+2023-04-15T09:54:11	::1 read /api/user/read 3
+2023-04-15T09:54:11	result [ { id: '3', login: 'user' } ]

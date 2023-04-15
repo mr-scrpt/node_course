@@ -36,7 +36,8 @@ module.exports = (console) => (routing, port) => {
       console.log(`${socket.remoteAddress} ${method} ${url} ${args}`)
       try {
         const result = await handler(...args)
-        res.end(JSON.stringify(result.rows))
+        console.log('result', result)
+        res.end(JSON.stringify(result))
       } catch (err) {
         console.error(err)
         res.end(new Error('Error get data'))
